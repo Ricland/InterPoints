@@ -3,7 +3,7 @@ from PyQt5 import QtWidgets, QtGui
 import design
 import math
 
-class ExampleApp(QtWidgets.QMainWindow, design.Ui_Form) :
+class InterPoints(QtWidgets.QMainWindow, design.Ui_Form) :
     def __init__(self): 
         super().__init__()
         self.setupUi(self)
@@ -65,7 +65,7 @@ def validation_of_data (lat1, lng1, lat2, lng2, n) :
         
 def main() :
     app = QtWidgets.QApplication(sys.argv)
-    window = ExampleApp()
+    window = InterPoints()
     window.show()
     app.exec_()
 
